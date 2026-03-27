@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+article{
+
+
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #43389F, #4ec6ca);
+}
+
+#one_cross{
+
+    
+    display: flex;
+    position: relative;
+    top: 120px;
+    left: 88px;
+    height: 40px;
+    width: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+
+
+}
+
+#one_straight{
+    
+    display: flex;
+    position: relative;
+    top: 80px;
+    left: 103px;
+    height: 100px;
+    width: 24px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0px 13px  0px rgba(0,0,0,0.2);
+    z-index: 5;
+
+}
+
+
+#days{
+    
+    
+    display: flex;
+    position:relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', 'Courier', sans-serif;
+    font-size: 82px;
+    font-weight: 700;
+    top: -130px;
+    
+}
+
+#css{
+    
+    display: flex;
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', 'Courier', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    top: -150px;
+    letter-spacing: 1px;
+    
+}
+
+
+#zero_1{
+
+    display: flex;
+    position: relative;
+    top: -20px;
+    left: 120px;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border: 24px solid aliceblue;
+    background: transparent;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    z-index: 2;
+    
+
+}
+
+#zero_2{
+
+    display: flex;
+    position: relative;
+    top: -120px;
+    left: 200px;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border: 24px solid aliceblue;
+    background: transparent;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
