@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#pyramid {
+    height: 400px;
+    width: 400px;
+    background-color: #272C34;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top, #F0DE75 30%, #7DDFFC 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#small_triangle {
+    width: 0;
+    height: 0;
+    border-left: 57px solid transparent;
+    border-right: 116px solid transparent;
+    border-bottom: 100px solid #DDDADA;
+    display: flex;
+    position: relative;
+    top: -9px;
+    right: -10px;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 58px solid transparent;
+    border-right: 50px solid transparent;
+    display: flex;
+    position: relative;
+    top: -9px;
+    right: -10px;
+}
+
+#triangle {
+
+    width: 0;
+    height: 0;
+    border-left: 58px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #F4F4F4;
+    display: flex;
+    position: absolute;
+    top: 41px;
+    right: 80px;
+}
+
+#sunrises {
+
+    height: 20px;
+    width: 20px;
+    background-color: #FFEF00;
+    border-radius: 100px;
+    display: flex;
+    position: relative;
+    top: -65px;
+    animation: moveSun 5s linear infinite;
+    right: 145px;
+}
+
+#shadow {
+    width: 0;
+    height: 0;
+    border-left: 115px solid transparent;
+    border-right: 57px solid transparent;
+    border-top: 20px solid grey;
+
+    position: absolute;
+    top: 140px;
+        animation: moveShadow 5s linear infinite;
+
+}
+
+@keyframes moveShadow {
+
+    0% {
+
+        
+
+        border-top: 2px solid grey;
+    }
+   
+
+}
+
+
+@keyframes moveSun {
+    0% {
+        left: -150px;
+
+    }
+
+    50% {
+
+        top: -90px;
+    }
+
+    51% {
+
+        top: -88px;
+        background-color: #ffea00;
+    }
+
+    100% {
+        left: -40px;
+        background-color: #F57209;
+    }
+}
