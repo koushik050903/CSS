@@ -62,17 +62,7 @@ iframe {
   border: none;
   overflow: hidden;
 }
-.label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: black;
-  color: white;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 5px;
-}
+
 
 
 
