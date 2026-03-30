@@ -9,6 +9,5 @@ This project is all about improving my CSS skills by building something new ever
 Day 1  - ✅ Completed  
 Day 2  - ✅ Completed  
 Day 3  - ✅ Completed
-S
 Day 4  - ✅ Completed
 Day 5  - ⌛ In Progess
