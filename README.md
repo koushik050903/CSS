@@ -10,4 +10,4 @@ This project is all about improving my CSS skills by building something new ever
 - Day 2 – ✅ Completed
 - Day 3 – ✅ Completed
 - Day 4 – ✅ Completed
-- Day 5 – ⌛ In Progress
+- Day 5 – ✅ Completed
