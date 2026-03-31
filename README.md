@@ -11,3 +11,4 @@ This project is all about improving my CSS skills by building something new ever
 - Day 3 – ✅ Completed
 - Day 4 – ✅ Completed
 - Day 5 – ✅ Completed
+- Day 6 - ✅ Completed
