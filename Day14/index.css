@@ -1,0 +1,146 @@
+#frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  background: #4B4841;
+  border-radius: 5px;
+}
+
+#card {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  top: 110px;
+  left: 40px;
+  perspective: 800px;
+}
+
+#card:hover #flip {
+  transform: rotateX(180deg);
+}
+
+#flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 1s ease-in-out;
+}
+
+#front, #back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFCE4E;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#front {
+  transform: rotateX(0);
+}
+
+#back {
+  transform: rotateX(180deg);
+}
+
+/* Images animation */
+#front img {
+  position: relative;
+  top: 52px;
+  animation: bike 0.6s ease-in-out infinite;
+}
+
+#back img {
+  position: relative;
+  top: 57px;
+  animation: helicopter 1.5s ease-in-out infinite;
+}
+
+/* Street */
+#street {
+  position: absolute;
+  top: 127px;
+  left: 80px;
+  width: 160px;
+  height: 3px;
+  overflow: hidden;
+}
+
+/* Stripes */
+#stripe1, #stripe2, #stripe3, #stripe4, #stripe5,
+#stripe6, #stripe7, #stripe8, #stripe9 {
+  position: absolute;
+  right: -25px;
+  height: 3px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: street 1s linear infinite;
+}
+
+#stripe1 { width: 4px; top: 0; }
+#stripe2 { width: 6px; top: 0; }
+#stripe3 { width: 8px; top: 0; }
+#stripe4 { width: 10px; top: 0; }
+#stripe5 { width: 12px; top: 0; }
+#stripe6 { width: 14px; top: 0; }
+#stripe7 { width: 16px; top: 0; }
+#stripe8 { width: 18px; top: 0; }
+#stripe9 { width: 20px; top: 0; }
+
+/* Sky */
+#sky {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 160px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Clouds */
+#cloud1, #cloud2, #cloud3, #cloud4, #cloud5,
+#cloud6, #cloud7, #cloud8, #cloud9 {
+  position: absolute;
+  right: -25px;
+  height: 3px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: cloud 1s linear infinite;
+}
+
+#cloud1 { top: 20px; width: 20px; }
+#cloud2 { top: 34px; width: 25px; }
+#cloud3 { top: 48px; width: 30px; }
+#cloud4 { top: 62px; width: 35px; }
+#cloud5 { top: 76px; width: 40px; }
+#cloud6 { top: 90px; width: 45px; }
+#cloud7 { top: 104px; width: 50px; }
+#cloud8 { top: 118px; width: 55px; }
+#cloud9 { top: 132px; width: 60px; }
+
+/* Animations */
+@keyframes bike {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.03); }
+}
+
+@keyframes street {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-210px) scaleX(0.8); }
+}
+
+@keyframes helicopter {
+  0%, 100% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+}
+
+@keyframes cloud {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-210px) scaleX(0.8); }
+}
